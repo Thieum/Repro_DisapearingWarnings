@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Machinex Rules" Description="Machinex standard rulesets (release version, with errors)." ToolsVersion="16.0">
+  <IncludeAll Action="Error" />
+  <Include Path="basiccorrectnessrules.ruleset" Action="Default" />
+  <Include Path="basicdesignguidelinerules.ruleset" Action="Default" />
+  <Include Path="concurrencycheckrules.ruleset" Action="Default" />
+  <Include Path="concurrencyrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckarithmeticrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckboundsrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckclassrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckconcurrencyrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckconstrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckdeclrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckenumrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckexperimentalrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckfuncrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckgslrules.ruleset" Action="Default" />
+  <Include Path="cppcorechecklifetimerules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckownerpointerrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckrawpointerrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckrules.ruleset" Action="Default" />
+  <Include Path="cppcorechecksharedpointerrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckstlrules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckstylerules.ruleset" Action="Default" />
+  <Include Path="cppcorechecktyperules.ruleset" Action="Default" />
+  <Include Path="cppcorecheckuniquepointerrules.ruleset" Action="Default" />
+  <Include Path="extendedcorrectnessrules.ruleset" Action="Default" />
+  <Include Path="extendeddesignguidelinerules.ruleset" Action="Default" />
+  <Include Path="globalizationrules.ruleset" Action="Default" />
+  <Include Path="managedminimumrules.ruleset" Action="Default" />
+  <Include Path="minimumrecommendedrules.ruleset" Action="Default" />
+  <Include Path="mixedminimumrules.ruleset" Action="Default" />
+  <Include Path="mixedrecommendedrules.ruleset" Action="Default" />
+  <Include Path="nativeminimumrules.ruleset" Action="Default" />
+  <Include Path="nativerecommendedrules.ruleset" Action="Default" />
+  <Include Path="securityrules.ruleset" Action="Default" />
+  <Rules AnalyzerId="CodeCracker.CSharp" RuleNamespace="CodeCracker.CSharp">
+    <Rule Id="CC0001" Action="None" />
+    <Rule Id="CC0009" Action="None" />
+    <Rule Id="CC0022" Action="None" />
+    <Rule Id="CC0033" Action="None" />
+    <Rule Id="CC0057" Action="None" />
+    <Rule Id="CC0061" Action="None" />
+    <Rule Id="CC0091" Action="None" />
+    <Rule Id="CC0105" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1014" Action="None" />
+    <Rule Id="CA1020" Action="None" />
+    <Rule Id="CA1059" Action="None" />
+    <Rule Id="CA1300" Action="None" />
+    <Rule Id="CA1301" Action="None" />
+    <Rule Id="CA1302" Action="None" />
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA1304" Action="None" />
+    <Rule Id="CA1305" Action="None" />
+    <Rule Id="CA1306" Action="None" />
+    <Rule Id="CA1307" Action="None" />
+    <Rule Id="CA1308" Action="None" />
+    <Rule Id="CA1309" Action="None" />
+    <Rule Id="CA1601" Action="None" />
+    <Rule Id="CA1700" Action="None" />
+    <Rule Id="CA1701" Action="None" />
+    <Rule Id="CA1702" Action="None" />
+    <Rule Id="CA1703" Action="None" />
+    <Rule Id="CA1704" Action="None" />
+    <Rule Id="CA1707" Action="None" />
+    <Rule Id="CA1708" Action="None" />
+    <Rule Id="CA1709" Action="None" />
+    <Rule Id="CA1710" Action="None" />
+    <Rule Id="CA1711" Action="None" />
+    <Rule Id="CA1712" Action="None" />
+    <Rule Id="CA1713" Action="None" />
+    <Rule Id="CA1714" Action="None" />
+    <Rule Id="CA1715" Action="None" />
+    <Rule Id="CA1716" Action="None" />
+    <Rule Id="CA1717" Action="None" />
+    <Rule Id="CA1719" Action="None" />
+    <Rule Id="CA1720" Action="None" />
+    <Rule Id="CA1721" Action="None" />
+    <Rule Id="CA1722" Action="None" />
+    <Rule Id="CA1724" Action="None" />
+    <Rule Id="CA1725" Action="None" />
+    <Rule Id="CA1726" Action="None" />
+    <Rule Id="CA2101" Action="None" />
+    <Rule Id="CA2204" Action="None" />
+    <Rule Id="CA2210" Action="None" />
+    <Rule Id="CA2243" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C26446" Action="None" /> <!-- gsl.at()-->
+    <Rule Id="C26458" Action="None" /> <!-- gsl.at()-->
+    <Rule Id="C26467" Action="None" /> <!-- narrow cast / multiplat / VS16.10 - revisit ??? -->
+  </Rules>
+  <Rules AnalyzerId="RefactoringEssentials" RuleNamespace="RefactoringEssentials">
+    <Rule Id="RECS0004" Action="None" />
+    <Rule Id="RECS0070" Action="None" />
+    <Rule Id="RECS0154" Action="None" />
+    <Rule Id="RECS0165" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers">
+    <Rule Id="RCS1018" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
+    <Rule Id="S1135" Action="None" />
+  </Rules>
+</RuleSet>
